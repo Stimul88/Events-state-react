@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-style: none;
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #535354;
+}
+
+.cards-view {
+    display: grid;
+    margin-top: 50px;
+    padding: 0 50px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    column-gap: 100px;
+}
+
+.items-view {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*padding: 20px 40px;*/
+    border-radius: 5px;
+    width: 100%;
+    /*filter: drop-shadow(0 0 5px #fff);*/
+    -moz-box-shadow:    5px 5px 5px 2px gainsboro;
+    -webkit-box-shadow: 5px 5px 10px 2px gainsboro;
+    /*background-color: #f5f5f5;*/
+}
+
+.name {
+    top: 10px;
+    font-size: 1em;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.name-list {
+    top: 10px;
+    font-size: 1em;
+    /*position: absolute;*/
+    text-transform: uppercase;
+}
+
+.color {
+    top: 70px;
+    position: absolute;
+}
+
+.img {
+    width: 100%;
+    z-index: -1;
+}
+
+.img-list {
+    height: 100%;
+}
+
+.card__bottom {
+    bottom: 15px;
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 5px 12px;
+    border: 1px solid red;
+    border-radius: 25px;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: red;
+    color: #f5f5f5;
+}
+
+.items {
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+}
+
+.item .img {
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}
